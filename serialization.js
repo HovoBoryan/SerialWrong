@@ -1,5 +1,6 @@
 
 const fs = require("fs");
+const LinkedList = require('./linkedlist.js');
 function serialize(list, filename) {
     const serializedData = JSON.stringify(list.toArray());
     fs.writeFile(filename, serializedData, (err) => {
